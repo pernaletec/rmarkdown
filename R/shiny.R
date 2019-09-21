@@ -348,7 +348,8 @@ rmarkdown_shiny_ui <- function(dir, file) {
         tags$div(
           id = "rmd_loader_wrapper",
           tags$div(id = "rmd_loader", style = "display: none",
-                   tags$p("Please wait..."),
+                   tags$img(src = "rmd_resources/full_cobrex_small.png"),
+                   tags$p("Por favor, espere mientras CobrEx carga el tablero..."),
                    tags$img(src = "rmd_resources/rmd_loader.gif")))),
       shiny::uiOutput("__reactivedoc__")
     )
